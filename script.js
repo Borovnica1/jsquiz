@@ -21,7 +21,7 @@ function startQuiz() {
   var htmlString = "";
   var resultContainer = document.getElementById("results");
   resultContainer.style.color = resColor;
-  htmlString = "<h2>" + "Score" + "</h2>" + "<h2>" + countAnswers + "/5" + "</h2>" + "</br>" + "<img src='img/nat-7.jpg' style='height: 220px;'>";
+  htmlString = "<h2>" + "Score" + "</h2>" + "<h2>" + countAnswers + "/5" + "</h2>" + "</br>" + "<img src='img/nat-7.jpg' style='width: 220px;height: 220px; object-fit:cover; object-position: 0% 100%'>";
   resultContainer.innerHTML = empty;
   resultContainer.insertAdjacentHTML('beforeend', htmlString);
 }
